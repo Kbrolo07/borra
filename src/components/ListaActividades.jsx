@@ -6,9 +6,8 @@ export default function ListaActividades() {
   const [cargando, setCargando] = useState(true);
 
   // Reemplaza esta URL con tu endpoint real de NocoDB Cloud
-  // 🔒 PROTEGIDO CON VITE: Leemos las credenciales desde las variables de entorno del sistema
-  const NOCODB_URL = import.meta.env.VITE_NOCODB_URL;
-  const API_TOKEN = import.meta.env.VITE_API_TOKEN;
+ const NOCODB_URL = 'https://app.nocodb.com/api/v3/data/psghzn1ry3yuha7/m6vsgx29d6xhm12/records?pageSize=25';
+const API_TOKEN = 'nc_pat_FasrCh7bSAjBltkCwHilDiDyQGVB09LtLPGnY6SE';
 
   // CAPA 2: El mensajero asincrónico (useEffect + fetch GET)
   useEffect(() => {
